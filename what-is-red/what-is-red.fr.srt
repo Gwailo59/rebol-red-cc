@@ -901,444 +901,552 @@ J'ai fait ce graphique:
 181
 00:09:42,096 --> 00:09:43,414
 "Domain Scope of Application"
-
+**TOCOMPLETE**
 
 182
 00:09:43,414 --> 00:09:46,570
 for a few of the main programming languages.
-
+pour quelqu'uns des principaux langages de programmation.
 
 183
 00:09:46,570 --> 00:09:49,393
 For example, assembler is drivers
+Par exemple, l'assembleur est **TOCOMPLETE**
 
 184
 00:09:49,393 --> 00:09:52,019
 and very low-level code.
+et très bas niveau.
 
 185
 00:09:52,019 --> 00:09:54,895
 You can see that Java is really limited in its
+Vous pouvez constater que Java et vraiment limité dans sa
 
 186
 00:09:54,895 --> 00:09:58,084
 ability to address different abstraction levels.
+capacité à adresser les différents niveaux d'abstraction.
 
 187
 00:09:58,084 --> 00:10:00,607
 Ruby is quite wide;
+Ruby est assez vaste;
 
 188
 00:10:00,607 --> 00:10:02,989
 maybe it doesn't go down to the OS?
+mais il ne descend pas jusqu'au niveau de l'OS ?
 
 189
 00:10:02,989 --> 00:10:05,598
 I don't know if the Ruby interface
+Je ne sais pas si l'interface de Ruby
 
 190
 00:10:05,598 --> 00:10:09,888
 for calling OS API is really good or not.
+pour appeler les API OS est vraiment bonne ou pas.
 
 191
 00:10:09,888 --> 00:10:13,324
 Rebol has quite a wide scope.
+Rebol a un scope plutôt large.
 
 192
 00:10:13,324 --> 00:10:16,880
 Rascal is a very specific programming language.
+Rascal est un langage de programmation très spécifique.
 
 193
 00:10:16,880 --> 00:10:19,540
 It's a kind of DSL,
+C'est une sorte de langage dédié (DSL),
 
 194
 00:10:19,540 --> 00:10:23,246
 which is meant for writing other DSLs.
+qui est destiné à l'écriture d'autres langages dédiés (DSL).
 
 195
 00:10:23,246 --> 00:10:26,522
 So it's standing at the meta-DSL level.
+Il se situe au niveau meta-DSL.
 
 196
 00:10:26,522 --> 00:10:30,356
 So where is Red on that scale?
+Où est Red dans cette échelle ?
 
 197
 00:10:30,356 --> 00:10:33,954
 Well Red is aiming at addresing all needs
+Et bien Red vise à adresser tous les besoins
 
 198
 00:10:33,954 --> 00:10:37,272
 from the bottom to the top.
+du plus bas au plus haut.
 
 199
 00:10:37,272 --> 00:10:40,596
 Because I don't want to have to rely on another tool.
+Parce que je ne souhaite pas dépendre d'un autre outil.
 
 200
 00:10:40,596 --> 00:10:43,056
 I want the Red programming language
+Je veux que le langage de programmation Red
 
 201
 00:10:43,056 --> 00:10:45,913
 to be able to address all the needs
+soit capable d'adresser tous les besoins
 
 202
 00:10:45,913 --> 00:10:48,272
 without relying on something else.
+sans avoir à dépendre d'autre chose.
 
 203
 00:10:48,272 --> 00:10:51,236
 So you will tell me that it's quite impossible
+Vous allez me dire qu'est c'est quasiment impossible
 
 204
 00:10:51,236 --> 00:10:53,307
 to make a language that addresses
+de créer un langage qui adresse
 
 205
 00:10:53,307 --> 00:10:56,058
 such a wide scope.
+une telle portée.
 
 206
 00:10:56,058 --> 00:10:58,201
 And you'll be right.
+Et vous avez raison.
 
 207
 00:10:58,201 --> 00:11:00,771
 But Red has a trump card.
+Mais Red a un tout.
 
 208
 00:11:00,771 --> 00:11:04,418
 Red/System covers the low layers
+Red/System couvre les couches basses
 
 209
 00:11:04,418 --> 00:11:06,604
 and Red covers the upper layers.
+et Red couvre les couches hautes.
 
 210
 00:11:06,604 --> 00:11:10,037
 They are integrated together
+Ils sont intégrés l'un à l'autre
 
 211
 00:11:10,037 --> 00:11:11,702
 and working together.
+et fonctionnent de concert.
 
 212
 00:11:11,702 --> 00:11:15,114
 So Red/System, in fact, is a dialect of Red.
+Red/System est en fait un dialect de Red.
 
 213
 00:11:15,114 --> 00:11:17,191
 You can use it separately
+Vous pouvez l'utiliser séparemment
 
 214
 00:11:17,191 --> 00:11:20,112
 or directly embedded totally in Red.
+or directement totalement intégré à Red.
 
 215
 00:11:20,112 --> 00:11:25,446
 So let's have a look at the platforms we support.
+Regardons les plates-formes que nous supportons.
 
 216
 00:11:25,446 --> 00:11:26,597
 First on the desktop,
+D'abord pour les ordinateurs de bureau, 
 
 217
 00:11:26,597 --> 00:11:30,755
 we support the classic 3 main players.
+nous supportons les 3 acteurs principaux.
 
 218
 00:11:30,755 --> 00:11:34,424
 We also support some additional
+Nous supportons aussi d'autres
 
 219
 00:11:34,424 --> 00:11:36,693
 operating systems like Syllable.
+systèmes d'exploitation comme Syllable.
 
 220
 00:11:36,693 --> 00:11:38,829
 We would like to support FreeBSD
+Nous souhaitons supporter FreeBSD
 
 221
 00:11:38,829 --> 00:11:41,350
 but we had some low-level issues
+mais nous avons des soucis avec les couches de bas niveau 
 
 222
 00:11:41,350 --> 00:11:45,053
 and no FreeBSD experts among us
+et n'avons pas d'expert FreeBSD parmis nous
 
 223
 00:11:45,053 --> 00:11:48,456
 to solve those, so for now it's a bit stalled.
+pour les résoudre, donc pour le moment c'est au point mort.
 
 224
 00:11:48,456 --> 00:11:52,454
 But we could probably get Red ported
+Mais nous pourrons proter Red
 
 225
 00:11:52,454 --> 00:11:54,855
 on FreeBSD rapidly.
+sur FreeBSD rapidement.
 
 226
 00:11:54,855 --> 00:11:57,687
 Then we also want to address
+Alors nous souhaitons aussi adresser
 
 227
 00:11:57,687 --> 00:12:00,774
 the embedded market, starting with Android.
+le marché de la mobilité, en commencant par Android.
 
 228
 00:12:00,774 --> 00:12:02,771
 which we already support.
+que nous supportons déjà.
 
 229
 00:12:02,771 --> 00:12:04,787
 The next one will be iOS.
+Le prochain sera iOS.
 
 230
 00:12:04,787 --> 00:12:07,905
 And we already run on Raspberry Pi
+Et nous fonctionnons déjà sur le Raspberry Pi
 
 231
 00:12:07,905 --> 00:12:10,367
 which is becoming quite popular.
+qui commence à devenir très populaire.
 
 232
 00:12:10,367 --> 00:12:14,720
 I guess Bo will do some demonstrations
+Je suppose que Bo fera des démonstrations
 
 233
 00:12:14,720 --> 00:12:17,929
 maybe tomorrow.
+probalement demain.
 
 234
 00:12:17,929 --> 00:12:22,868
 We also have an experimental port on Arduino
+Nous avons aussi un portage expérimental sur Arduino
 
 235
 00:12:22,868 --> 00:12:27,030
 We started with AVR 8-bit.
+Nous avons commencé avec le AVR 8-bit.
 
 236
 00:12:27,030 --> 00:12:30,044
 But it's an experiment for now
+Mais il s'agit d'une expérimentation pour le moment
 
 237
 00:12:30,044 --> 00:12:32,895
 because other boards are coming
+parce que d'autres **TOCOMPLETE**
 
 238
 00:12:32,895 --> 00:12:36,014
 like 32-bit boards or Raspberry Pi.
+**TOCOMPLETE**
 
 239
 00:12:36,014 --> 00:12:41,790
 So 8-bit support may not be the thing to do now.
+Le support du 8-bit n'est pas la priorité du moment.
 
 240
 00:12:41,790 --> 00:12:45,320
 We also want to support virtual machines.
+Nous souhaitons aussi supporter les machines virtuelles.
 
 241
 00:12:45,320 --> 00:12:49,753
 We want to be able to connect to .NET
+Nous allons être capable de nous connecter à .NET
 
 242
 00:12:49,753 --> 00:12:53,139
 to the JVM, and to JavaScript.
+à la JVM, et à Javascript.
 
 243
 00:12:53,139 --> 00:12:55,602
 There are basically two methods
+En fait, il y a deux méthodes
 
 244
 00:12:55,602 --> 00:12:56,467
 to achieve this.
+pour y parvenir.
 
 245
 00:12:56,467 --> 00:13:00,940
 We can have a bridge, keeping Red like it is now
+Nous pouvons réaliser un pont, gardant Red tel qu'il est maintenant
 
 246
 00:13:00,940 --> 00:13:06,438
 and bridging with these virtual machines.
+en le connectant à ces machines virtuelles.
 
 247
 00:13:06,438 --> 00:13:08,746
 Or we can develop a new backend
+Ou nous pouvons développer un nouveau backend 
 
 248
 00:13:08,746 --> 00:13:11,146
 for Red and Red/System
+pour Red et Red/System
 
 249
 00:13:11,146 --> 00:13:13,710
 to be able to compile directly to the bytecode
+capable de compiler directement du bytecode
 
 250
 00:13:13,710 --> 00:13:15,817
 of these virtual machines.
+pour ces machines virtuelles.
 
 251
 00:13:15,817 --> 00:13:17,905
 So we have those two options.
+Nous avons ces deux options.
 
 252
 00:13:17,905 --> 00:13:21,645
 We started by making some bridges to the JVM.
+Nous avons commencé par réaliser des ponts avec la JVM.
 
 253
 00:13:21,645 --> 00:13:26,405
 We'll try to choose each time
+Nous allons essayer de choisir à chaque fois
 
 254
 00:13:26,405 --> 00:13:30,067
 the right solution -- the best one for the job.
+la meilleure solution -- celle qui correspondra le mieux.
 
 255
 00:13:30,067 --> 00:13:33,188
 So right now we are bridging with the JVM.
 
+
 256
 00:13:33,188 --> 00:13:37,997
 But we will probably compile for JavaScript directly.
+Mais nous allons probalement compiler directement pour Javascript. 
 
 257
 00:13:37,997 --> 00:13:41,551
 We have asm.js now, so we have
+Maintenant il y a asm.js, alors  
 
 258
 00:13:41,551 --> 00:13:45,325
 a really interesting platform to support.
+il y a vraiment une plate-forme intéressante à supporter.
 
 259
 00:13:45,325 --> 00:13:47,584
 I expect Red and Red/System
+Je m'attends à ce que Red et Red/System
 
 260
 00:13:47,584 --> 00:13:50,755
 to run quite fast on that.
+fonctionne rapidement dessus.
 
 261
 00:13:50,755 --> 00:13:53,753
 More practically, just another view of how it works
+Plus concrétement, voici une autre vue de comment cela fonctionne
 
 262
 00:13:53,753 --> 00:13:57,242
 So you have Red: one binary.
+Vous avez Red: un binaire.
 
 263
 00:13:57,242 --> 00:14:01,118
 You download and get all these features.
+Vous le téléchargez et vous avez toutes les fonctionnalités.
 
 264
 00:14:01,118 --> 00:14:04,756
 You can run a Red script directly from memory.
+Vous pouvez lancer un script Red directement depuis la mémoire. 
 
 265
 00:14:04,756 --> 00:14:08,124
 You can compile it to an executable.
+Vous pouvez le compiler et obtenir un exécutable.
 
 266
 00:14:08,124 --> 00:14:12,805
 You can cross-compile it...
+Vous pouvez faire de la cross-compilation...
 
 267
 00:14:12,805 --> 00:14:15,324
 we'll get back to that feature.
+nous reviendrons sur cette fonctionnalité.
 
 268
 00:14:15,324 --> 00:14:19,071
 You can also directly compile Red/System scripts,
+Vous pouvez aussi compiler directement un script Red/System,
 
 269
 00:14:19,071 --> 00:14:22,291
 if you don't want to use the Red layer
+si vous ne souhaitez pas utiliser la couche Red
 
 270
 00:14:22,291 --> 00:14:26,063
 but you want to code a low-level application.
+mais que vous souhaitez réaliser une application de bas niveau.
 
 271
 00:14:26,063 --> 00:14:29,955
 And you can also now compile shared libraries
+Maintenant, vous pouvez compiler des librairies partagées
 
 272
 00:14:29,955 --> 00:14:32,948
 that opens the door for spreading Red
+ce que ouvre les portes pour étendre Red
 
 273
 00:14:32,948 --> 00:14:36,582
 by plugging it everywhere we can.
+en le connecter partout où nous le pouvons.
 
 274
 00:14:36,582 --> 00:14:39,954
 You can also launch Red in a console mode
+Vous pouvez aussi lancer Red en mode console
 
 275
 00:14:39,954 --> 00:14:42,206
 so we have a Red console.
+nous avons une console pour Red.
 
 276
 00:14:42,206 --> 00:14:45,499
 So cross-compilation... Red is now able to cross-compile
+Pour la cross-compilation... Red est maintenant capable de faire la cross-compilation
 
 277
 00:14:45,499 --> 00:14:49,442
 to other systems, from any system to another.
+vers d'autres systèmes, de n'importe quel système vers un autre.
 
 278
 00:14:49,442 --> 00:14:52,731
 In fact it's able to compile from any platform
+En fait, il est capable de compiler depuis n'importe quelle plate-forme
 
 279
 00:14:52,731 --> 00:14:56,113
 where Rebol runs to any other platform.
+vers n'importe quelle autre plate-forme là où Rebol fonctionne.
 
 280
 00:14:56,113 --> 00:15:00,808
 To achieve that you don't need a HOWTO
+Pour réaliser cela, vous n'avez pas besoin d'un "COMMENT"
 
 281
 00:15:00,808 --> 00:15:02,363
 You don't need a tutorial.
+Vous n'avez pas besoin d'un tutoriel.
 
 282
 00:15:02,363 --> 00:15:04,788
 You don't need to search on the Net for
+Vous n'avez pas besoin de chercher sur le Net
 
 283
 00:15:04,788 --> 00:15:07,182
 how to achieve it.
+pour y parvenir.
 
 284
 00:15:07,182 --> 00:15:10,293
 You simply pass a "-t" command and the target ID
+Vous passer simplement la commande "-t" et l'ID de la cible
 
 285
 00:15:10,293 --> 00:15:11,777
 and that is all.
+et c'est tout.
 
 286
 00:15:11,777 --> 00:15:16,750
 A target ID is just an entry in a configuration file
+Un ID de la cible est une entrée dans le fichier de configuration
 
 287
 00:15:16,750 --> 00:15:21,988
 a simple Red dialect, where we just list
+un simple dialect Red, où nous listons
 
 288
 00:15:21,988 --> 00:15:26,132
 some options for the target platform.
+quelques options pour la plate-forme cible.
 
 289
 00:15:26,132 --> 00:15:31,110
 So currently we have this list of about 8 targets
+Nous avons actuellement une liste de 8 cibles
 
 290
 00:15:31,110 --> 00:15:33,602
 So we can cross-compile from any one
+
 
 291
 00:15:33,602 --> 00:15:35,828
