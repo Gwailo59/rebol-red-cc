@@ -1446,35 +1446,42 @@ Nous avons actuellement une liste de 8 cibles
 290
 00:15:31,110 --> 00:15:33,602
 So we can cross-compile from any one
-
+Nous pouvons effectuer de la cross-compilation de l'une
 
 291
 00:15:33,602 --> 00:15:35,828
 to any other, as long as Rebol
+vers l'autre à partir du moment où Rebol
 
 292
 00:15:35,828 --> 00:15:40,124
 runs on the source platform.
+peut fonctionner sur la plate-forme cible.
 
 293
 00:15:40,124 --> 00:15:41,557
 So as you can see we are supporting mainly
+Comme vous pouvez le voir nous supportons les principales
 
 294
 00:15:41,557 --> 00:15:45,594
 x86 and ARM based platforms.
+plates-formes basées sur x86 ainsi qu'ARM. 
 
 295
 00:15:45,594 --> 00:15:49,412
 To get a bit deeper inside the toolchain
+Pour aller plus en profondeur dans la chaîne de compilation
 
 296
 00:15:49,412 --> 00:15:51,796
 we have several parts.
+nous avons plusieurs parties.
 
 297
 00:15:51,796 --> 00:15:54,506
 We have the classical couple: compiler, linker.
+Nous avons le tandem classique: compilateur, éditeur de liens (linker).
 
 298
 00:15:54,506 --> 00:16:01,832
@@ -1487,10 +1494,12 @@ those two backends, x86 and ARM.
 300
 00:16:07,115 --> 00:16:11,919
 But we plan to extend it to support ARMv7
+Mais nous prévoyons d'étendre le support à ARMv7
 
 301
 00:16:11,919 --> 00:16:17,236
 "thumb mode" and 64-bit platforms.
+"thumb mode" ainsi qu'aux plates-formes 64 bits.
 
 302
 00:16:17,236 --> 00:16:22,287
